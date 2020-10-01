@@ -6,6 +6,19 @@ body {
   padding-top: 80px;
 }
 
+/* UTILITIES */
+
+.color-blue {
+  color: #0368f9;
+}
+
+/* BUTTONS */
+
+.btn.btn-bg {
+  background: #0368f9;
+  color: #fff;
+}
+
 /* TYPOGRAPHY */
 
 h1,
@@ -16,11 +29,14 @@ strong {
 }
 
 h1 {
-  font-size: 58px;
+  font-size: 48px;
+  line-height: 50px;
+  margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 h6 {
@@ -66,14 +82,14 @@ h6 {
   top: 1px;
 }
 
-.btn.btn-outline {
+.navbar-info .btn.btn-outline {
   border: solid #0368f9 1px;
   color: #0368f9;
   transition: background .5s,
               color .5s;
 }
 
-.btn.btn-outline:hover {
+.navbar-info .btn.btn-outline:hover {
   background: #0368f9;
   color: #fff;
 }
@@ -82,4 +98,119 @@ h6 {
 
 .hamburger-menu span {
   background: #0368f9;
+}
+
+.jumbotron {
+  background: url('../img/header/bg-banner-home.jpg');
+}
+
+.jumbotron-txt {
+  color: #fff;
+}
+
+.jumbotron-txt p {
+  font-size: 22px;
+}
+
+/* JUMBOTRON FORM */
+.jumbotron-form {
+  padding: 40px 25px;
+  border-radius: 20px;
+  color: #000;
+  background: #fff;
+}
+
+.jumbotron-form label {
+  display: none;
+}
+
+.jumbotron-form form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: solid lightgray 1px;
+  outline: none;
+}
+
+.jumbotron-form ::placeholder {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jumbotron-form form input:focus {
+  outline: none;
+  border: solid gray 1px;
+}
+
+.jumbotron-form .btn {
+  position: relative;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jumbotron-form .btn img {
+  position: absolute;
+  left: 5px;
+  bottom: 0;
+  padding: 5px;
+  float: left;
+  height: 100%;
+}
+
+.jumbotron-form .btn.btn-bg {
+  transition: opacity .5s;
+}
+
+.jumbotron-form .btn.btn-bg:hover {
+  opacity: .6;
+}
+
+.jumbotron-form .btn-outline {
+  background: #fff;
+  border: none;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transition: background .5s;
+}
+
+.jumbotron-form .btn-outline:hover {
+  background: rgba(100, 100, 100, 0.1);
+}
+
+.jumbotron-form p {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 768px) {
+
+  /* GENERAL SETTINGS */
+  /* TYPOGRAPHY */
+
+  h1 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+
+  /* HEADER */
+  /* JUMBOTRON */
+  .jumbotron-txt {
+    margin-right: 10px;
+  }
+
+  .jumbotron-form {
+    margin-left: 10px;
+  }
+
 }
