@@ -111,12 +111,17 @@ h5 {
 }
 
 h6 {
-  font-weight: 200;
+  font-size: 16px;
+  font-weight: 400;
   color: #fff;
 }
 
 p {
   font-size: 18px
+}
+
+.v-list li a {
+  color: #808794;
 }
 
 /* HEADER */
@@ -350,6 +355,27 @@ p.regions-item {
 
 a.regions-item {
   width: 30%;
+}
+
+/* FOOTER */
+.footer {
+  background: #031c4e;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #8b94a9;
+}
+
+.footer-made {
+  font-size: 12px;
+  color: #586785;
+  margin-bottom: 10px;
+}
+
+.footer i {
+  color: #8b94a9;
+  margin-right: 8px;
 }
 
 
