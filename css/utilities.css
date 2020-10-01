@@ -69,10 +69,7 @@
   display: inline-block;
 }
 
-.h-menu {
-  display: inline-block;
-}
-.v-menu {
+.v-list li {
   list-style: none;
 }
 

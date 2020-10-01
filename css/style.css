@@ -39,9 +39,18 @@ h2 {
   margin-bottom: 20px;
 }
 
+h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
 h6 {
   font-weight: 200;
   color: #fff;
+}
+
+p {
+  font-size: 18px
 }
 
 /* HEADER */
@@ -52,6 +61,7 @@ h6 {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
   background: #fff;
   line-height: 80px;
 }
@@ -189,7 +199,7 @@ h6 {
 
 /* MAIN */
 /* CUSTOMERS */
-.customer {
+.customers {
   background: #f3f5f9;
 }
 
@@ -212,6 +222,37 @@ h6 {
 .customer-content > p {
   font-size: 16px;
   color: #5b6987;
+}
+
+/* DEPLOY */
+.deploy-list li {
+  padding: 8px 0;
+  border-left: 3px solid #e5e8ed;
+  transition: border .5s;
+}
+
+.deploy-list li a {
+  font-weight: 400;
+  color: #5b6987;
+  padding-left: 10px;
+  transition: color .3s,
+              font-weight .5s;
+}
+
+.deploy-list li:hover {
+  border-color: #0368f9;
+}
+
+.deploy-list li a:hover {
+  color: #0368f9;
+  font-weight: 600;
+}
+
+.deploy-box {
+  padding: 0 10px; 
+  margin-bottom: 30px;
+  width: 100%;
+  float: left;
 }
 
 
@@ -252,5 +293,19 @@ h6 {
   .customer-item {
     width: calc(100% / 6 - 24px);
   }
+
+  /* DEPLOY */
+  .deploy-box {
+    width: 50%
+  }
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+  /* MAIN */
+  /* DEPLOY */
+
 
 }
