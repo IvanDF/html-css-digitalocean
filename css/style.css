@@ -55,6 +55,76 @@ body {
   background: #0368f9;
 }
 
+/* HELP ICON */
+.help-icon {
+  background: #0368f9;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  width: 60px;
+}
+
+.help-icon .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 28px;
+  height: 28px;
+  color: #fff;
+  background: #f00;
+  border: solid 4px #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align:center;
+}
+
+.help-message {
+  font-size: 14px;
+  position: absolute;
+  left: 20px
+  right: auto;
+  bottom: -85px;
+  opacity: 0;
+  font-weight: 400;
+  width: 280px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+  animation: help-msg 35s infinite ease-in-out
+}
+
+.help-message::after {
+  content: '';
+  position: absolute;
+  right: auto;
+  bottom: auto;
+  left: 20px;
+  top: -5px;
+  transform: rotate(45deg);
+  background: #fff;
+  height: 10px;
+  width: 10px;
+}
+
+@keyframes help-msg {
+
+    20%, 80% {
+    opacity: 0;
+    }
+
+    0% {
+    opacity: 0;
+    }
+
+    15% {
+    opacity: 1;
+    }
+}
+
 /* UTILITIES */
 
 .color-blue {
@@ -95,7 +165,7 @@ strong {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 36px;
   line-height: 50px;
   margin-bottom: 25px;
 }
@@ -113,6 +183,7 @@ h5 {
 h6 {
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 10px;
   color: #fff;
 }
 
@@ -120,8 +191,13 @@ p {
   font-size: 18px
 }
 
+.v-list li {
+  margin-bottom: 3px;
+}
+
 .v-list li a {
   color: #808794;
+  margin-bottom: 3px;
 }
 
 /* HEADER */
@@ -386,6 +462,12 @@ a.regions-item {
 
   /* GENERAL SETTINGS */
 
+  /* HELP ICON */
+  .help-message {
+    font-size: 18px;
+    width: 350px;
+  }
+
   /* SLIDESHOW */
 
   .slideshow-img > .next,
@@ -444,6 +526,25 @@ a.regions-item {
 @media screen and (min-width: 992px) {
 
   /* GENERAL SETTINGS */
+
+  /* HELP ICON */
+  .help-icon {
+    bottom: 30px;
+    left: auto;
+    right: 30px;
+  }
+  .help-message {
+    left: auto;
+    right: 80px;
+    bottom: 0;
+  }
+
+  .help-message::after {
+    left: auto;
+    top: auto;
+    right: -5px;
+    bottom: 20px;
+  }
 
   /* SLIDESHOW */
 

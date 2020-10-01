@@ -13,7 +13,8 @@
 /* LAYOUT */
 
 .pad-y70 {
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .mb-25 {
