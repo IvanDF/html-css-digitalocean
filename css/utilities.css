@@ -152,7 +152,11 @@ h6 {
   border: 1px solid transparent;
 }
 
-.btn-small {
+.btn-xs {
+  padding: 10px;
+}
+
+.btn-sm {
   padding: 20px;
 }
 
