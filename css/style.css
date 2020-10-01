@@ -187,7 +187,37 @@ h6 {
   font-weight: 400;
 }
 
+/* MAIN */
+/* CUSTOMERS */
+.customer {
+  background: #f3f5f9;
+}
+
+.customer-list {
+  margin-bottom: 20px;
+}
+
+.customer-item {
+  width: calc(100% / 2 - 24px);
+  margin: 10px 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.customer-content > p,
+.customer-content > a {
+  font-weight: 400
+}
+
+.customer-content > p {
+  font-size: 16px;
+  color: #5b6987;
+}
+
+
+
 /* MEDIA QUERY */
+/* TABLET SCREEN */
 @media screen and (min-width: 768px) {
 
   /* GENERAL SETTINGS */
@@ -202,7 +232,6 @@ h6 {
     font-size: 34px;
   }
 
-
   /* HEADER */
   /* JUMBOTRON */
   .jumbotron-txt {
@@ -211,6 +240,17 @@ h6 {
 
   .jumbotron-form {
     margin-left: 10px;
+  }
+
+  /* MAIN */
+  /* CUSTOMERS */
+
+  .customer-list {
+    margin-bottom: 0;
+  }
+
+  .customer-item {
+    width: calc(100% / 6 - 24px);
   }
 
 }
