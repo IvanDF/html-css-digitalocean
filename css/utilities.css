@@ -1,0 +1,134 @@
+/* GENERAL UTILITIES */
+
+/* LAYOUT */
+
+/* POSITION */
+
+.pos-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vertical-mdl {
+  vertical-align: middle;
+}
+
+/* MENU */
+
+.menu-highlights li {
+  position: relative;
+}
+
+.menu-highlights a::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 0;
+  left: 0;
+  bottom: 0;   /* INSERIRE DISTANZA LINE-HEIGHT */
+  background: black;
+  transition: width .5s;
+}
+
+.menu-highlights a:hover::after {
+  position: absolute;
+  width: 100%;
+}
+
+.list-inline {
+  display: inline-block;
+}
+
+.h-menu {
+  display: inline-block;
+}
+.v-menu {
+  list-style: none;
+}
+
+/* TYPOGRAPHY */
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+
+/* TEXT SETTINGS */
+
+.txt-left{
+  text-align: left;
+}
+
+.txt-right{
+  text-align: right;
+}
+
+.txt-center{
+  text-align: center;
+}
+
+.txt-upper {
+  text-transform: uppercase;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+/* IMAGES */
+
+.img-responsive {
+  display: block;
+  width: 100%;
+}
+
+/* MEDIA QUERY */
+
+.mobile-none {
+  display: none;
+}
+
+.only-mobile {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+
+  /* MEDIA QUERY */
+  .mobile-none {
+    display: block;
+  }
+
+  .only-mobile {
+    display: none;
+  }
+}

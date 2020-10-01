@@ -1,0 +1,26 @@
+/* GENERAL SETTINGS */
+body {
+  font-family: font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h5,
+strong {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 58px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h6 {
+  font-weight: 200;
+  color: #fff;
+}
