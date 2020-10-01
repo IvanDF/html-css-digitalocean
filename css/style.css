@@ -1,8 +1,9 @@
 /* GENERAL SETTINGS */
 
 body {
-  font-family: font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 200;
+  padding-top: 80px;
 }
 
 /* TYPOGRAPHY */
@@ -27,16 +28,58 @@ h6 {
   color: #fff;
 }
 
+/* HEADER */
 
-/* DEBUG */
-.box {
-  height: 200px;
-  background: #000;
+.navbar {
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  line-height: 80px;
 }
-.box1 {
-  border: solid 1px red
+
+.navbar-logo {
+  line-height: 80px;
 }
-.box2 {
-  background: #ff3;
-  height: 60px;
+
+.navbar-logo img {
+  max-height: 50px
+}
+
+.navbar-menu li,
+.navbar-info li {
+  padding-left: 15px;
+}
+
+.navbar-menu li a,
+.navbar-info li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+
+.navbar-menu li a i,
+.navbar-info li a i {
+  position: relative;
+  top: 1px;
+}
+
+.btn.btn-outline {
+  border: solid #0368f9 1px;
+  color: #0368f9;
+  transition: background .5s,
+              color .5s;
+}
+
+.btn.btn-outline:hover {
+  background: #0368f9;
+  color: #fff;
+}
+
+/* HAMBURGER MENU */
+
+.hamburger-menu span {
+  background: #0368f9;
 }

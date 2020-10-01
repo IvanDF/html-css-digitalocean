@@ -1,5 +1,9 @@
 /* GENERAL UTILITIES */
 
+.lh-0 {
+  line-height: 0;
+}
+
 /* CLEARFIX */
 
 .clearfix {
@@ -46,7 +50,7 @@
   width: 100%;
 }
 
-.list-inline {
+.list-inline li {
   display: inline-block;
 }
 
@@ -55,6 +59,22 @@
 }
 .v-menu {
   list-style: none;
+}
+
+/* HAMBURGER MENU */
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-menu span {
+  display: block;
+  border-radius: 30px;
+  height: 5px;
+  width: 35px;
+  margin-top: 8px;
+  background: #000;
 }
 
 /* TYPOGRAPHY */
@@ -112,11 +132,29 @@ h6 {
     border: 1px solid transparent;
 }
 
+.btn-small {
+  padding: 20px;
+}
+
+.btn-bg {
+  border-radius: 10px;
+  background: gray;
+  color: #fff;
+
+}
+
+.btn-outline {
+  border-radius: 10px;
+  border:solid 1px gray;
+  color: gray;
+}
+
 /* IMAGES */
 
 .img-responsive {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* MEDIA QUERY */
@@ -125,18 +163,36 @@ h6 {
   display: none;
 }
 
-.only-mobile {
+.mobile-only {
   display: block;
 }
 
+.desktop-only {
+  display: none;
+}
+
+
+/* TABLET SCREEN */
 @media screen and (min-width: 768px) {
 
-  /* MEDIA QUERY */
   .mobile-none {
     display: block;
   }
 
-  .only-mobile {
+  .mobile-only {
     display: none;
   }
+}
+
+/* DESKTOP SCREEN */
+@media screen and (min-width: 992px) {
+
+  .desktop-only {
+    display: block;
+  }
+
+  .desktop-none {
+    display: none;
+  }
+
 }

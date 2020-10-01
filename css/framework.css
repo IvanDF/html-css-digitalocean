@@ -12,6 +12,7 @@
 
 /* CONTAINER */
 [class*="container"] {
+  padding: 0 5px;
   margin: 0 auto;
   max-width: 100%
 }
