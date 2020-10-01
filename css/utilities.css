@@ -1,5 +1,13 @@
 /* GENERAL UTILITIES */
 
+/* CLEARFIX */
+
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 /* LAYOUT */
 
 /* POSITION */

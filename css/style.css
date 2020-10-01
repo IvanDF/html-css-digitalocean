@@ -1,10 +1,12 @@
 /* GENERAL SETTINGS */
+
 body {
   font-family: font-family: 'Poppins', sans-serif;
   font-weight: 200;
 }
 
 /* TYPOGRAPHY */
+
 h1,
 h2,
 h5,
@@ -23,4 +25,14 @@ h2 {
 h6 {
   font-weight: 200;
   color: #fff;
+}
+
+
+/* DEBUG */
+.box {
+  height: 200px;
+  background: #000;
+}
+.box1 {
+  border: solid 1px red
 }
