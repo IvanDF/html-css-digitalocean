@@ -19,7 +19,7 @@ body {
 }
 
 .slideshow-txt p{
-  font-size: 20px;
+  font-size:16px;
 }
 
 .slideshow-img > .next,
@@ -392,6 +392,7 @@ main p {
   padding: 8px 0;
   border-left: 3px solid #e5e8ed;
   transition: border .5s;
+  margin-bottom: 0;
 }
 
 .deploy-list li a {
@@ -530,8 +531,6 @@ a.regions-item {
   transition: color .5s
 }
 
-
-
 /* MEDIA QUERY */
 /* TABLET SCREEN */
 @media screen and (min-width: 768px) {
@@ -552,6 +551,10 @@ a.regions-item {
   .slideshow-txt > .previous {
     display: block;
     font-size: 40px;
+  }
+
+  .slideshow-txt p{
+    font-size:20px;
   }
 
   /* TYPOGRAPHY */
