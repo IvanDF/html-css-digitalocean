@@ -425,7 +425,7 @@ main p {
 /* REGIONS */
 
 .regions-row {
-  padding: 10px 20px;
+  padding: 10px 5px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.8);
 }
 
@@ -440,7 +440,7 @@ main p {
 .regions-item {
   color: #fff;
   float: left;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 strong.regions-item {
@@ -448,13 +448,13 @@ strong.regions-item {
 }
 
 p.regions-item {
-  width: 50%;
+  width: 45%;
   margin: 0;
 }
 
 a.regions-item {
   color: #68d2d0;
-  width: 30%;
+  width: 35%;
 }
 
 /* FOOTER */
@@ -592,6 +592,11 @@ a.regions-item {
   }
 
   /* REGIONS */
+  .regions-row {
+    padding: 10px 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  }
+
   .regions-item {
     font-size: 16px;
   }
