@@ -87,20 +87,20 @@
           <div class="jumbotron-form txt-center">
             <h2>Deploy your app in seconds. <br> <span class="color-blue">Get started now.</span></h2>
             <!-- FORM -->
-            <form class="" action="index.html" method="post">
+            <form class="main-form" action="index.html" method="post">
               <label for="">Email</label>
               <input type="email" name="email" placeholder="Email" required>
               <label for="">Password</label>
-              <input type="password" name="password" placeholder="Password" required>
-              <button class="btn btn-bg"type="button" name="button">Create your account</button>
-              <button class="btn btn-outline clearfix"type="button" name="button">
+              <input type="password" name="password" placeholder="Password" required minlength="5" pattern="[A-Za-z]{0-9}">
+              <input type="submit" class="btn btn-bg" value="Create your account">
+              <div class="google-sign">
+                <input type="submit" class="btn btn-outline clearfix" value="Sign up with google">
                 <img class="img-responsive" src="./img/header/google-icon.png" alt="">
-                Sign up with google
-              </button>
-              <p>By signing up you agree to the
-                <a href="#">Terms of Service.</a>
-              </p>
+              </div>
             </form>
+            <p>By signing up you agree to the
+              <a href="#">Terms of Service.</a>
+            </p>
           </div>
         </div>
       </div>
@@ -343,10 +343,10 @@
           <div class="slideshow">
             <div class="slideshow-txt mb-25">
               <img class="img-responsive mb-25" src="./img/body/customer/rockerbox-logo.png" alt="">
-              <p class="mb-25">"We have been able to make scaling the technical infrastructure of our business cost effective and efficient."</p>
-              <p><strong>Rick O'Toole</strong></p>
-              <p class="mb-25">Co-founder and CTO</p>
-              <a href="#">Read story &gt;</a>
+              <p>"We have been able to make scaling the technical infrastructure of our business cost effective and efficient."</p>
+              <p class="mt-25"><strong>Rick O'Toole</strong></p>
+              <p>Co-founder and CTO</p>
+              <a class="mt-25" href="#">Read story &gt;</a>
               <i class="fas fa-chevron-right next"></i>
               <i class="fas fa-chevron-left previous"></i>
             </div>
