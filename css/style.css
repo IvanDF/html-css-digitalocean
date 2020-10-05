@@ -52,6 +52,11 @@ body {
   border-radius: 50%;
   border: solid 1px #0368f9;
   cursor: pointer;
+  transition: background .5s
+}
+
+.slideshow-control .circle:hover {
+  background: #82b5ff;
 }
 
 .slideshow-control .circle.active {
@@ -59,6 +64,7 @@ body {
 }
 
 /* HELP ICON */
+
 .help-icon {
   background: #0368f9;
   border-radius: 5px;
@@ -149,6 +155,7 @@ body {
 }
 
 /* BUTTONS */
+
 .btn {
   font-weight: 600;
 }
@@ -166,6 +173,18 @@ body {
 }
 
 .bg-blue > .btn-bg:hover {
+  background: #0368f9;
+  color: #fff;
+}
+
+.btn.btn-outline {
+  border: solid #0368f9 1px;
+  color: #0368f9;
+  transition: background .5s,
+              color .5s;
+}
+
+.btn.btn-outline:hover {
   background: #0368f9;
   color: #fff;
 }
@@ -205,15 +224,6 @@ p {
   font-size: 18px
 }
 
-.v-list li {
-  margin-bottom: 3px;
-}
-
-.v-list li a {
-  color: #808794;
-  margin-bottom: 3px;
-}
-
 /* HEADER */
 
 .navbar {
@@ -227,42 +237,17 @@ p {
   line-height: 80px;
 }
 
-.navbar-logo {
-  line-height: 80px;
-}
-
-.navbar-logo img {
-  max-height: 50px
-}
-
-.navbar-menu li,
-.navbar-info li {
-  padding-left: 15px;
-}
-
 .navbar-menu li a,
-.navbar-info li a {
+.navbar-log li a {
   font-size: 14px;
   font-weight: 400;
   color: #000;
 }
 
-.navbar-menu li a i,
-.navbar-info li a i {
+.navbar-menu li i,
+.navbar-log li i {
   position: relative;
   top: 1px;
-}
-
-.navbar-info .btn.btn-outline {
-  border: solid #0368f9 1px;
-  color: #0368f9;
-  transition: background .5s,
-              color .5s;
-}
-
-.navbar-info .btn.btn-outline:hover {
-  background: #0368f9;
-  color: #fff;
 }
 
 /* HAMBURGER MENU */
@@ -271,11 +256,10 @@ p {
   background: #0368f9;
 }
 
+/* JUMBOTRON */
+
 .jumbotron {
   background: url('../img/header/bg-banner-home.jpg');
-}
-
-.jumbotron-txt {
   color: #fff;
 }
 
@@ -284,6 +268,7 @@ p {
 }
 
 /* JUMBOTRON FORM */
+
 .jumbotron-form {
   padding: 40px 25px;
   border-radius: 20px;
@@ -295,7 +280,7 @@ p {
   display: none;
 }
 
-.jumbotron-form form input {
+.jumbotron-form .main-form input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -304,12 +289,13 @@ p {
   outline: none;
 }
 
+
 .jumbotron-form ::placeholder {
   font-size: 14px;
   font-weight: 600;
 }
 
-.jumbotron-form form input:focus {
+.jumbotron-form .main-form input:focus {
   outline: none;
   border: solid gray 1px;
 }
@@ -317,42 +303,52 @@ p {
 .jumbotron-form .btn {
   width: 100%;
   padding: 8px;
-  margin-bottom: 10px;
   border-radius: 5px;
   font-size: 14px;
   font-weight: 600;
 }
 
-.google-sign {
+.jumbotron-form .btn-bg {
+  margin-bottom: 10px;
+}
+
+.jumbotron-form .google-sign {
   position: relative;
+}
+
+.jumbotron-form .google-sign > input {
+  margin-bottom: 0;
 }
 
 .jumbotron-form img {
   position: absolute;
   left: 5px;
-  bottom: 10px;
+  top: 50%;
+  transform: translateY(-50%);
   padding: 5px;
   float: left;
   height: 30px;
 }
 
 .jumbotron-form .btn.btn-bg {
+  opacity: .6;
   transition: opacity .5s;
 }
 
 .jumbotron-form .btn.btn-bg:hover {
-  opacity: .6;
+  opacity: 1;
 }
 
-.jumbotron-form .btn-outline {
+.jumbotron-form .google-sign .btn.btn-outline {
   background: #fff;
-  border: none;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  transition: background .5s;
+  color: rgba(100, 100, 100, 0.7);
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: color .5s;
 }
 
-.jumbotron-form .btn-outline:hover {
-  background: rgba(100, 100, 100, 0.1);
+.jumbotron-form .google-sign .btn.btn-outline:hover {
+  color: #000;
 }
 
 .jumbotron-form p {
@@ -366,6 +362,11 @@ p {
 main p {
   margin-bottom: 75px;
 }
+
+main a {
+  text-decoration: none;
+}
+
 /* CUSTOMERS */
 
 .customer-list {
@@ -392,6 +393,10 @@ main p {
 
 /* DEPLOY */
 
+.deploy-info {
+  padding: 0 15px;
+}
+
 .deploy-list li {
   padding: 8px 0;
   border-left: 3px solid #e5e8ed;
@@ -414,13 +419,6 @@ main p {
 .deploy-list li a:hover {
   color: #0368f9;
   font-weight: 600;
-}
-
-.deploy-box {
-  margin-bottom: 30px;
-  width: 100%;
-  float: left;
-  padding: 0 10px;
 }
 
 .deploy-box p {
@@ -463,6 +461,16 @@ a.regions-item {
 }
 
 /* FOOTER */
+
+.v-list li {
+  margin-bottom: 3px;
+}
+
+.v-list li a {
+  color: #808794;
+  margin-bottom: 3px;
+}
+
 .footer {
   background: #031c4e;
 }
@@ -493,12 +501,13 @@ a.regions-item {
 }
 
 /* FOOTER SOCIAL COLORS */
+
 .fa-twitter:hover {
   color: #00acee;
 }
 
 .fa-twitter {
-  transition: color .5s
+  transition: color .5s;
 }
 
 .fa-facebook-f:hover {
@@ -506,7 +515,7 @@ a.regions-item {
 }
 
 .fa-facebook-f {
-  transition: color .5s
+  transition: color .5s;
 }
 
 .fa-instagram:hover {
@@ -516,7 +525,9 @@ a.regions-item {
 }
 
 .fa-instagram {
-  transition: background .5s,
+  transition: -webkit-linear-gradient .5s,
+              -webkit-background-clip .5s,
+              -webkit-text-fill-color .5s;
 }
 
 .fa-youtube:hover {
@@ -524,7 +535,7 @@ a.regions-item {
 }
 
 .fa-youtube {
-  transition: color .5s
+  transition: color .5s;
 }
 
 .fa-linkedin:hover {
@@ -532,7 +543,7 @@ a.regions-item {
 }
 
 .fa-linkedin {
-  transition: color .5s
+  transition: color .5s;
 }
 
 /* MEDIA QUERY */
@@ -616,11 +627,13 @@ a.regions-item {
   /* GENERAL SETTINGS */
 
   /* HELP ICON */
+
   .help-icon {
     bottom: 30px;
     left: auto;
     right: 30px;
   }
+
   .help-message {
     left: auto;
     right: 80px;
@@ -657,6 +670,5 @@ a.regions-item {
     width: calc(100% / 6 - 24px);
     padding: 0;
   }
-
 
 }

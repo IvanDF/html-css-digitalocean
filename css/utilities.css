@@ -1,11 +1,130 @@
 /* GENERAL UTILITIES */
-/* CLEARFIX */
 
-.clearfix {
+body {
+  /* padding-top: 85px; SE LA NAVBAR É IN POSITION FIXED  */
+}
+
+/* HEADER */
+
+.navbar {
+  width: 100%;
+  line-height: 80px;
+  background: gray;
+}
+
+.navbar[class*='fx'] {
+  position: fixed;
+  z-index: 10;
+}
+
+.navbar.fx-top {
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+}
+
+.navbar.fx-bottom {
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar::after {
   content: '';
   display: table;
   clear: both;
 }
+
+.navbar-logo,
+.navbar-menu,
+.navbar-log,
+.navbar-lang,
+.navbar-mobile {
+  float: left;
+}
+
+.navbar-logo.right,
+.navbar-menu.right,
+.navbar-log.right,
+.navbar-lang.right,
+.navbar-mobile.right {
+  float: right;
+}
+
+.navbar-logo li,
+.navbar-menu li,
+.navbar-log li,
+.navbar-lang li {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.navbar-logo a,
+.navbar-menu a,
+.navbar-log a,
+.navbar-lang a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* MENU */
+
+.menu-highlights li {
+  position: relative;
+}
+
+.menu-highlights a::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 0;
+  left: 0;
+  bottom: 0;   /* PARTE DAL FONDO SE SI USA UNA LINE-HEIGHT */
+  background: black;
+  transition: width .5s;
+}
+
+.menu-highlights a:hover::after {
+  position: absolute;
+  width: 100%;
+}
+
+/* HAMBURGER MENU */
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-menu span {
+  display: block;
+  border-radius: 30px;
+  height: 5px;
+  width: 35px;
+  margin-top: 8px;
+  background: #000;
+}
+
+.hamburger-menu span:first-child {
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* DA ORDINARE */
+
 
 /* LAYOUT */
 
@@ -38,6 +157,14 @@
   margin-top: 75px;
 }
 
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 
 /* POSITION */
 
@@ -52,29 +179,6 @@
   vertical-align: middle;
 }
 
-/* MENU */
-
-.menu-highlights li {
-  position: relative;
-}
-
-.menu-highlights a::after {
-  content: '';
-  position: absolute;
-  display: block;
-  height: 5px;
-  width: 0;
-  left: 0;
-  bottom: 0;   /* PARTE DAL FONDO SE SI USA UNA LINE-HEIGHT */
-  background: black;
-  transition: width .5s;
-}
-
-.menu-highlights a:hover::after {
-  position: absolute;
-  width: 100%;
-}
-
 .list-inline li {
   display: inline-block;
 }
@@ -83,30 +187,9 @@
   list-style: none;
 }
 
-/* HAMBURGER MENU */
 
-.hamburger-menu {
-  position: relative;
-  display: inline-block;
-}
-
-.hamburger-menu span {
-  display: block;
-  border-radius: 30px;
-  height: 5px;
-  width: 35px;
-  margin-top: 8px;
-  background: #000;
-}
-
-.hamburger-menu span:first-child {
-  margin-top: 0;
-}
 
 /* TYPOGRAPHY */
-a {
-  text-decoration: none;
-}
 
 p {
   font-size: 16px;
@@ -146,6 +229,10 @@ h6 {
 
 .txt-center{
   text-align: center;
+}
+
+.txt-justify{
+  text-align: justify;
 }
 
 .txt-upper {
@@ -189,44 +276,4 @@ h6 {
   display: inline-block;
   max-width: 100%;
   height: auto;
-}
-
-/* MEDIA QUERY */
-
-.mobile-none {
-  display: none;
-}
-
-.mobile-only {
-  display: block;
-}
-
-.desktop-only {
-  display: none;
-}
-
-
-/* TABLET SCREEN */
-@media screen and (min-width: 768px) {
-
-  .mobile-none {
-    display: block;
-  }
-
-  .mobile-only {
-    display: none;
-  }
-}
-
-/* DESKTOP SCREEN */
-@media screen and (min-width: 992px) {
-
-  .desktop-only {
-    display: block;
-  }
-
-  .desktop-none {
-    display: none;
-  }
-
 }
