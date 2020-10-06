@@ -15,12 +15,12 @@ body {
 .slideshow-txt {
   position: relative;
   background: #fff;
-  padding: 40px;
+  padding: 70px 5px;
+  font-weight: 400
 }
 
 .slideshow-txt p {
-  font-size:16px;
-  margin-bottom: 0;
+  font-size: 16px;
 }
 
 .slideshow-img > .next,
@@ -582,9 +582,14 @@ a.regions-item {
     font-size: 40px;
   }
 
-  .slideshow-txt p{
-    font-size:20px;
+  .slideshow-txt p {
+    font-size: 24px;
   }
+
+  .slideshow-txt > .sign {
+    font-size: 18px;
+  }
+
 
   /* TYPOGRAPHY */
 
