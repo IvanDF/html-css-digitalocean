@@ -22,52 +22,50 @@
 
   <!-- MAIN HEADER -->
   <header class="main-header">
-    <nav class="navbar">
+    <nav class="navbar fx-top">
       <div class="container">
         <div class="col-12">
-          <div class="container">
-            <div class="col-4 col-lg-2 navbar-logo txt-left ">
-              <img class="vertical-mdl img-responsive" src="./img/header/do-logo.png" alt="">
-            </div>
-            <div class="col-6 col-lg-6 lg-visible navbar-menu txt-center">
-              <ul>
-                <li>
-                  <a href="#">Products <i class="fas fa-chevron-down"></i></a>
-                </li>
-                <li>
-                  <a href="#">Customers</a>
-                </li>
-                <li>
-                  <a href="#">Community <i class="fas fa-chevron-down"></i></a>
-                </li>
-                <li>
-                  <a href="#">Pricing</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-8 col-lg-4 navbar-log">
-              <ul class="lg-visible txt-right">
-                <li>
-                  <a href="#">Docs</a>
-                </li>
-                <li>
-                  <a href="#">Support <i class="fas fa-chevron-down"></i></a>
-                </li>
-                <li>
-                  <a href="#">Login</a>
-                </li>
-                <li>
-                  <a class="btn btn-sm btn-outline lh-0" href="#">Sign up</a>
-                </li>
-              </ul>
-              <div class="lg-hidden txt-right">
-                <!-- HAMBURGER MENU -->
-                <span class="hamburger-menu vertical-mdl">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </div>
+          <div class="navbar-logo txt-left ">
+            <img class="vertical-mdl img-responsive" src="./img/header/do-logo.png" alt="">
+          </div>
+          <div class="lg-visible navbar-menu txt-center">
+            <ul>
+              <li>
+                <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li>
+                <a href="#">Customers</a>
+              </li>
+              <li>
+                <a href="#">Community <i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-log">
+            <ul class="lg-visible txt-right">
+              <li>
+                <a href="#">Docs</a>
+              </li>
+              <li>
+                <a href="#">Support <i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li>
+                <a href="#">Login</a>
+              </li>
+              <li>
+                <a class="btn btn-sm btn-outline lh-0" href="#">Sign up</a>
+              </li>
+            </ul>
+            <div class="lg-hidden txt-right">
+              <!-- HAMBURGER MENU -->
+              <span class="hamburger-menu vertical-mdl">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
             </div>
           </div>
         </div>
@@ -114,7 +112,7 @@
     <section class="customers bg-gray pad-y70">
       <div class="container txt-center customer-content">
         <h5 class="txt-upper color-gray">Innovative businesses trust DigitalOcean</h5>
-        <ul class="customer-list">
+        <ul class="customer-list mb-25">
           <li class="customer-item">
             <a href="#" target="_blank">
               <img class="img-responsive" src="./img/body/customer/docker.png" alt="">
@@ -152,9 +150,9 @@
 
     <!-- DEPLOY -->
     <section class="depoly pad-y70 container">
-      <div class="deploy-info txt-center mb-25">
+      <div class=" col-12 deploy-info txt-center mb-25">
         <h2>Deploy and scale seamlessly</h2>
-        <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+        <p class="mb-50">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
       </div>
       <div class="col-12 col-md-2 col-md-offset-1 deploy-list mb-25">
         <ul class="v-list">
@@ -176,7 +174,7 @@
         </ul>
       </div>
       <div class="col-12 col-md-8 col-md-offset-1">
-        <div class="deploy-box-container clearfix">
+        <div class="deploy-row clearfix">
           <div class="deploy-box md-pad-right15 float-left mb-25">
             <img src="./img/body/deploy/cluster-deploy.svg" alt="">
             <h5>Cluster Ddeployments</h5>
@@ -188,7 +186,7 @@
             <p>Get the compute resources you need with Standard or Optimize  Droplets</p>
           </div>
         </div>
-        <div class="deploy-box-container clearfix">
+        <div class="deploy-row clearfix">
           <div class="deploy-box md-pad-right15 float-left mb-25">
             <img src="./img/body/deploy/one-click.svg" alt="">
             <h5>One-Click Apps</h5>
@@ -208,7 +206,7 @@
       <div class="container">
         <div class="mb-25">
           <h2>Designed for developers</h2>
-          <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API</p>
+          <p class="mb-50">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API</p>
         </div>
         <div class="col-8 col-offset-2">
           <div class="slideshow">
@@ -237,22 +235,22 @@
         <div class="features-title">
           <h2 class="mb-75">The features your business needs</h2>
         </div>
-        <div class="col-12 col-md-4 features-content txt-left mb-50">
-          <img class="mb-25" src="./img/body/features/pred-pricing.svg" alt="">
+        <div class="col-12 col-md-4 features-content txt-left mb-25">
+          <img src="./img/body/features/pred-pricing.svg" alt="">
           <h5>Predictable pricing</h5>
-          <p class="mb-25">Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
+          <p>Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
           <a class="color-blue" href="#">Pricing &gt;</a>
         </div>
-        <div class="col-12 col-md-4 features-content txt-left mb-50">
-          <img class="mb-25" src="./img/body/features/world-class.svg" alt="">
+        <div class="col-12 col-md-4 features-content txt-left mb-25">
+          <img src="./img/body/features/world-class.svg" alt="">
           <h5>World-class service</h5>
-          <p class="mb-25">Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.</p>
+          <p>Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.</p>
           <a class="color-blue" href="#">Support &gt;</a>
         </div>
-        <div class="col-12 col-md-4 features-content txt-left mb-50">
-          <img class="mb-25" src="./img/body/features/reliable-platform.svg" alt="">
+        <div class="col-12 col-md-4 features-content txt-left mb-25">
+          <img src="./img/body/features/reliable-platform.svg" alt="">
           <h5>Reliable platform</h5>
-          <p class="mb-25">More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
+          <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
           <a class="color-blue" href="#">Security &gt;</a>
         </div>
       </div>
@@ -265,68 +263,68 @@
         <div class="col-12 col-lg-6">
           <div class="container regions-col lg-pad-right15 mb-25">
             <div class="col-12 clearfix regions-row">
-              <strong class="regions-item txt-left">AMS2</strong>
+              <strong class="regions-item txt-left xs-pad-left15">AMS2</strong>
               <p class="regions-item txt-left">Amsterdam, Netherlands</p>
-              <a class="regions-item txt-right" href="#">Test Speed &gt;</a>
+              <a class="regions-item txt-right xs-pad-right15" href="#">Test Speed &gt;</a>
             </div>
             <div class="col-12 clearfix regions-row">
-              <strong class="regions-item txt-left">AMS3</strong>
+              <strong class="regions-item txt-left xs-pad-left15">AMS3</strong>
               <p class="regions-item txt-left">Amsterdam, Netherlands</p>
-              <a class="regions-item txt-right" href="#">Test Speed &gt;</a>
+              <a class="regions-item txt-right xs-pad-right15" href="#">Test Speed &gt;</a>
             </div>
             <div class="col-12 clearfix regions-row">
-              <strong class="regions-item txt-left">BLR1</strong>
+              <strong class="regions-item txt-left xs-pad-left15">BLR1</strong>
               <p class="regions-item txt-left">Bangalore, India</p>
-              <a class="regions-item txt-right" href="#">Test Speed &gt;</a>
+              <a class="regions-item txt-right xs-pad-right15" href="#">Test Speed &gt;</a>
             </div>
             <div class="col-12 clearfix regions-row">
-              <strong class="regions-item txt-left">FRA1</strong>
+              <strong class="regions-item txt-left xs-pad-left15">FRA1</strong>
               <p class="regions-item txt-left">Frankfurt, Germany</p>
-              <a class="regions-item txt-right" href="#">Test Speed &gt;</a>
+              <a class="regions-item txt-right xs-pad-right15" href="#">Test Speed &gt;</a>
             </div>
             <div class="col-12 clearfix regions-row">
-              <strong class="regions-item txt-left">LON1</strong>
+              <strong class="regions-item txt-left xs-pad-left15">LON1</strong>
               <p class="regions-item txt-left">London, UK</p>
-              <a class="regions-item txt-right" href="#">Test Speed &gt;</a>
+              <a class="regions-item txt-right xs-pad-right15" href="#">Test Speed &gt;</a>
             </div>
             <div class="col-12 clearfix regions-row">
-              <strong class="regions-item txt-left" class="regions-item">NYC1</strong>
+              <strong class="regions-item txt-left xs-pad-left15">NYC1</strong>
               <p class="regions-item txt-left" class="regions-item">New York, NY</p>
-              <a class="regions-item txt-right" class="regions-item" href="#">Test Speed &gt;</a>
+              <a class="regions-item txt-right xs-pad-right15" class="regions-item" href="#">Test Speed &gt;</a>
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-6">
           <div class="container regions-col lg-pad-left15">
             <div class="col-12 clearfix regions-row">
-              <strong class="regions-item txt-left">AMS2</strong>
+              <strong class="regions-item txt-left xs-pad-left15">AMS2</strong>
               <p class="regions-item txt-left">Amsterdam, Netherlands</p>
-              <a class="regions-item txt-right" href="#">Test Speed &gt;</a>
+              <a class="regions-item txt-right xs-pad-right15" href="#">Test Speed &gt;</a>
             </div>
             <div class="col-12 clearfix regions-row">
-              <strong class="regions-item txt-left">AMS3</strong>
+              <strong class="regions-item txt-left xs-pad-left15">AMS3</strong>
               <p class="regions-item txt-left">Amsterdam, Netherlands</p>
-              <a class="regions-item txt-right" href="#">Test Speed &gt;</a>
+              <a class="regions-item txt-right xs-pad-right15" href="#">Test Speed &gt;</a>
             </div>
             <div class="col-12 clearfix regions-row">
-              <strong class="regions-item txt-left">BLR1</strong>
+              <strong class="regions-item txt-left xs-pad-left15">BLR1</strong>
               <p class="regions-item txt-left">Bangalore, India</p>
-              <a class="regions-item txt-right" href="#">Test Speed &gt;</a>
+              <a class="regions-item txt-right xs-pad-right15" href="#">Test Speed &gt;</a>
             </div>
             <div class="col-12 clearfix regions-row">
-              <strong class="regions-item txt-left">FRA1</strong>
+              <strong class="regions-item txt-left xs-pad-left15">FRA1</strong>
               <p class="regions-item txt-left">Frankfurt, Germany</p>
-              <a class="regions-item txt-right" href="#">Test Speed &gt;</a>
+              <a class="regions-item txt-right xs-pad-right15" href="#">Test Speed &gt;</a>
             </div>
             <div class="col-12 clearfix regions-row">
-              <strong class="regions-item txt-left">LON1</strong>
+              <strong class="regions-item txt-left xs-pad-left15">LON1</strong>
               <p class="regions-item txt-left">London, UK</p>
-              <a class="regions-item txt-right" href="#">Test Speed &gt;</a>
+              <a class="regions-item txt-right xs-pad-right15" href="#">Test Speed &gt;</a>
             </div>
             <div class="col-12 clearfix regions-row">
-              <strong class="regions-item txt-left">NYC1</strong>
+              <strong class="regions-item txt-left xs-pad-left15">NYC1</strong>
               <p class="regions-item txt-left">New York, NY</p>
-              <a class="regions-item txt-right" href="#">Test Speed &gt;</a>
+              <a class="regions-item txt-right xs-pad-right15" href="#">Test Speed &gt;</a>
             </div>
           </div>
         </div>
@@ -371,9 +369,9 @@
       <div class="container">
         <div class="col-12 col-lg-4">
           <img src="./img/icons/logo-small.svg" alt="">
-          <p class="footer-copy">&copy; 2020 DigitalOcean, LLC. All rights reserved.</p>
-          <p class="footer-made">Proudly made in NY</p>
-          <ul class="list-inline mb-25">
+          <p class="text-copy">&copy; 2020 DigitalOcean, LLC. All rights reserved.</p>
+          <p class="text-made">Proudly made in NY</p>
+          <ul class="footer-social list-inline mb-25">
             <li>
               <a href="#" target="_blank">
                 <i class="fab fa-twitter"></i>

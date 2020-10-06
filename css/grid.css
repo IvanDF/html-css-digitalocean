@@ -72,8 +72,16 @@
   display: none;
 }
 
+.xs-pad-left15 {
+  padding-left: 15px;
+}
+
 .xs-pad-left0 {
   padding-left: 0;
+}
+
+.xs-pad-right15 {
+  padding-right: 15px;
 }
 
 .xs-pad-right0 {

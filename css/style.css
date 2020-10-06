@@ -227,14 +227,16 @@ p {
 /* HEADER */
 
 .navbar {
-  margin: 0 auto;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
   background: #fff;
-  line-height: 80px;
+  box-shadow: 3px 0 8px #000
+}
+
+.navbar-logo {
+  width: 50%
+}
+
+.navbar-log {
+  width: 50%
 }
 
 .navbar-menu li a,
@@ -288,7 +290,6 @@ p {
   border: solid lightgray 1px;
   outline: none;
 }
-
 
 .jumbotron-form ::placeholder {
   font-size: 14px;
@@ -359,19 +360,11 @@ p {
 
 /* MAIN */
 
-main p {
-  margin-bottom: 75px;
-}
-
-main a {
+.main a {
   text-decoration: none;
 }
 
 /* CUSTOMERS */
-
-.customer-list {
-  margin-bottom: 20px;
-}
 
 .customer-item {
   width: calc(100% / 2 - 24px);
@@ -393,15 +386,15 @@ main a {
 
 /* DEPLOY */
 
-.deploy-info {
-  padding: 0 15px;
+.deploy-list ul {
+  display: inline-block;
 }
 
 .deploy-list li {
   padding: 8px 0;
   border-left: 3px solid #e5e8ed;
-  transition: border .5s;
   margin-bottom: 0;
+  transition: border .8s;
 }
 
 .deploy-list li a {
@@ -421,19 +414,11 @@ main a {
   font-weight: 600;
 }
 
-.deploy-box p {
-  margin: 0;
-}
-
 /* REGIONS */
 
 .regions-row {
   padding: 10px 5px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.8);
-}
-
-.regions-row:last-child {
-  border-bottom: 0
 }
 
 .regions-row:last-child {
@@ -462,20 +447,13 @@ a.regions-item {
 
 /* FOOTER */
 
-.v-list li {
-  margin-bottom: 3px;
-}
-
-.v-list li a {
-  color: #808794;
-  margin-bottom: 3px;
-}
-
 .footer {
   background: #031c4e;
 }
 
 .footer .v-list li a {
+  color: #808794;
+  margin-bottom: 3px;
   transition: color .5s;
 }
 
@@ -483,21 +461,17 @@ a.regions-item {
   color: #666;
 }
 
-.footer-copy {
+.footer-social i,
+.text-copy {
   font-size: 14px;
   color: #8b94a9;
-  margin: 0;
+  margin: 0 8px 0 0;
 }
 
-.footer-made {
+.text-made {
   font-size: 12px;
   color: #586785;
   margin-bottom: 10px;
-}
-
-.footer i {
-  color: #8b94a9;
-  margin-right: 8px;
 }
 
 /* FOOTER SOCIAL COLORS */
@@ -547,10 +521,38 @@ a.regions-item {
 }
 
 /* MEDIA QUERY */
+
+/* SMALL COLUMN (SMARTPHONE) */
+@media screen and (min-width: 576px) {
+
+  /* GENERAL SETTINGS */
+
+  /* HEADER */
+
+  .navbar-logo {
+    width: 30%
+  }
+
+  .navbar-log {
+    width: 70%
+  }
+
+}
+
 /* TABLET SCREEN */
 @media screen and (min-width: 768px) {
 
   /* GENERAL SETTINGS */
+
+  /* HEADER */
+
+  .navbar-logo {
+    width: 20%
+  }
+
+  .navbar-log {
+    width: 80%
+  }
 
   /* HELP ICON */
   .help-message {
@@ -625,6 +627,20 @@ a.regions-item {
 @media screen and (min-width: 992px) {
 
   /* GENERAL SETTINGS */
+
+  /* HEADER */
+
+  .navbar-logo {
+    width: 15%
+  }
+
+  .navbar-menu {
+    width: 50%
+  }
+
+  .navbar-log {
+    width: 35%
+  }
 
   /* HELP ICON */
 
