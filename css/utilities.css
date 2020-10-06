@@ -133,6 +133,10 @@ body {
   padding-bottom: 70px;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .mb-25 {
   margin-bottom: 25px;
 }
@@ -143,6 +147,10 @@ body {
 
 .mb-75 {
   margin-bottom: 75px;
+}
+
+.mt-0 {
+  margin-top: 0;
 }
 
 .mt-25 {
