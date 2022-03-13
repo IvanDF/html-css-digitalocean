@@ -15,12 +15,12 @@
     
 ## ⛏️ Built With <a name = "tech_stack"></a>
 
-- [HTML](https://www.mongodb.com/) - Page Structure
-- [CSS](https://expressjs.com/) - Page Style & responsive
+- [HTML](https://html.com) - Page Structure
+- [CSS](https://www.w3.org/TR/CSS/) - Page Style & responsive
 
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@IvanDF](https://github.com/IvanDF) - Design & Develop
 
-See also my [website!](https://github.com/kylelobo/The-Documentation-Compendium/contributors)
+See also my [website!](https://ivandf.dev)
 New one is in progress.
