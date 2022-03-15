@@ -10,7 +10,8 @@
 
 ---
 
-<p align="left"> DigitalOcean landing page demo.</p>
+<p align="center">Landing page responsive demo based on DigitalOcean.</p>
+<br> 
 <br> 
     
 ## ⛏️ Built With <a name = "tech_stack"></a>
